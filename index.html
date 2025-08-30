@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Design Landing Page</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            container: {
+              center: true,
+              padding: "2rem",
+              screens: {
+                lg: "1120px",
+                xl: "1280px",
+              },
+            },
+
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+            },
+            colors: {
+              primary: "#1F1F1F",
+              accent: "#F5F5F5",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-inter">
+    <!-- Header -->
+    <header class="w-full shadow-sm">
+      <div
+        class="container mx-auto px-6 py-6 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <img src="./images/Logo.png" alt="" class="cursor-pointer" />
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex space-x-8 font-medium">
+          <a href="#" class="text-[#545454] hover:text-[#1F1F1F]">Home</a>
+          <a href="#" class="text-[#545454] hover:text-[#1F1F1F]">Services</a>
+          <a href="#" class="text-[#545454] hover:text-[#1F1F1F]">Contact</a>
+          <a href="#" class="text-[#545454] hover:text-[#1F1F1F]">Support</a>
+        </nav>
+
+        <!-- Button -->
+        <a
+          href="#"
+          class="bg-[#1F1F1F] w-[140px] h-[60px] text-white rounded-[4px] flex justify-center items-center text-[20px] hover:bg-black transition"
+        >
+          Sign Up
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto py-20">
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        <!-- Left Side -->
+        <div
+          class="flex-1 lg:space-y-[100px] space-y-[30px] text-center lg:text-left"
+        >
+          <h1
+            class="font-inter font-medium text-4xl md:text-6xl lg:text-7xl text-[#1F1F1F] leading-tight"
+          >
+            Interior Design
+          </h1>
+          <p
+            class="text-base md:text-lg lg:text-2xl text-[#545454] max-w-2xl mx-auto lg:mx-0"
+          >
+            Step into a world where the art of Interior Design is meticulously
+            crafted to bring together timeless elegance and cutting-edge modern
+            Innovation, Allowing you to transform your living spaces into the
+            epitome of luxury and sophistication
+          </p>
+          <a
+            href="#"
+            class="bg-[#1F1F1F] px-8 py-4 text-white rounded-md inline-flex justify-center items-center text-lg md:text-xl hover:bg-black transition"
+          >
+            Start Project
+          </a>
+
+          <!-- Stats -->
+          <div
+            class="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 pt-6"
+          >
+            <div>
+              <p class="text-3xl md:text-5xl text-[#545454] font-normal">
+                400+
+              </p>
+              <p class="text-sm md:text-base text-[#545454] font-normal">
+                Project Complete
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-5xl text-[#545454] font-normal">
+                600+
+              </p>
+              <p class="text-sm md:text-base text-[#545454] font-normal">
+                Satisfied Clients
+              </p>
+            </div>
+            <div>
+              <p class="text-3xl md:text-5xl text-[#545454] font-normal">
+                100+
+              </p>
+              <p class="text-sm md:text-base text-[#545454] font-normal">
+                Unique Styles
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="flex-1 relative flex justify-center lg:justify-end">
+          <img
+            src="./images/Image 1.png"
+            alt="Interior main"
+            class="w-[80%] md:w-[70%] lg:w-[500px] rounded-[4px] shadow-md"
+          />
+          <img
+            src="./images/Image.png"
+            alt="Interior secondary"
+            class="absolute top-[110%] left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-[-80px] w-[85%] md:w-[70%] lg:w-[600px] rounded-[4px] shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- services  -->
+    <section class="container mt-[200px] mb-20">
+      <div>
+        <!-- title -->
+        <div
+          class="flex items-center justify-center lg:justify-start mb-20 gap-3 lg:gap-8"
+        >
+          <div
+            class="w-[30px] lg:w-[100px] border-t-[3px] border-[#1F1F1F]"
+          ></div>
+
+          <h2
+            class="text-[40px] lg:text-[58px] font-semibold leading-[100%] text-[#1F1F1F]"
+          >
+            Our Services
+          </h2>
+        </div>
+        <!-- services -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 text-center"
+        >
+          <!-- service -->
+          <div
+            class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-10"
+          >
+            <!-- icon -->
+            <img
+              src="./images/services-1.png"
+              alt=""
+              class="w-[72px] h-[70px]"
+            />
+
+            <!-- content -->
+            <div>
+              <h3
+                class="font-semibold text-[30px] leading-[100%] tracking-normal mb-5 text-[#1F1F1F]"
+              >
+                Lighting Design
+              </h3>
+              <p
+                class="font-medium text-1xl leading-[165%] tracking-normal text-[#545454]"
+              >
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+          <!-- service -->
+          <div
+            class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-10"
+          >
+            <!-- icon -->
+            <img
+              src="./images/services-2.png"
+              alt=""
+              class="w-[72px] h-[70px]"
+            />
+
+            <!-- content -->
+            <div>
+              <h3
+                class="font-semibold text-[30px] leading-[100%] tracking-normal mb-5 text-[#1F1F1F]"
+              >
+                Interior Design
+              </h3>
+              <p
+                class="font-medium text-1xl leading-[165%] tracking-normal text-[#545454]"
+              >
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+          <!-- service -->
+          <div
+            class="flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left gap-10"
+          >
+            <!-- icon -->
+            <img
+              src="./images/services-3.png"
+              alt=""
+              class="w-[72px] h-[70px]"
+            />
+
+            <!-- content -->
+            <div>
+              <h3
+                class="font-semibold text-[30px] leading-[100%] tracking-normal mb-5 text-[#1F1F1F]"
+              >
+                Outdoor Design
+              </h3>
+              <p
+                class="font-medium text-1xl leading-[165%] tracking-normal text-[#545454]"
+              >
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Designing-1 -->
+
+    <section class="container h-[712px] mt-[200px] mb-20">
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        <!-- image -->
+        <div class="w-full max-w-[711px] lg:h-[711px] overflow-hidden">
+          <img
+            src="./images/design.png"
+            alt=""
+            class="w-full h-full object-cover rounded-[4px]"
+          />
+        </div>
+        <!-- content -->
+        <div
+          class="w-full max-w-[704px] flex flex-col gap-10 items-center lg:items-start text-center lg:text-left"
+        >
+          <h2
+            class="font-[600] text-[#1F1F1F] leading-[120%] tracking-normal text-5xl"
+          >
+            Designing Your Dream With Brilliance
+          </h2>
+          <p
+            class="font-medium text-[24px] text-[#545454] leading-[165%] tracking-normal"
+          >
+            Elevate your spaces with bespoke interior designs that reflect your
+            unique style and aspirations, crafted with precision and brilliance
+            for an unforgettable living experience
+          </p>
+          <!-- plus -->
+          <div
+            class="w-full flex items-center justify-between mt-10 border-b border-[#DADADA] pb-5"
+          >
+            <h3>Living Room Interior Design</h3>
+            <img
+              src="./images/plus.png"
+              alt=""
+              class="text-[#1F1F1F] w-[24px] h-[24px]"
+            />
+          </div>
+          <!-- plus -->
+          <div
+            class="w-full flex items-center justify-between mt-10 border-b border-[#DADADA] pb-5"
+          >
+            <h3>Commercial Office Room Interior Design</h3>
+            <img
+              src="./images/plus.png"
+              alt=""
+              class="text-[#1F1F1F] w-[24px] h-[24px]"
+            />
+          </div>
+          <a
+            href="#"
+            class="bg-[#1F1F1F] mt-5 w-[275px] h-[80px] px-8 py-4 text-white rounded-md inline-flex justify-center items-center text-lg md:text-xl hover:bg-black transition"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Designing-2 -->
+
+    <section class="container h-[712px] mt-[400px] lg:mt-[200px]">
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+        <!-- content -->
+        <div
+          class="w-full max-w-[704px] flex flex-col gap-20 items-center lg:items-start text-center lg:text-left"
+        >
+          <h2
+            class="font-[600] text-[#1F1F1F] leading-[120%] tracking-normal text-5xl"
+          >
+            Designing Your Dream in Three Simple Steps
+          </h2>
+
+          <!-- box -->
+          <div
+            class="flex flex-col lg:flex-row items-start lg:gap-10 items-center lg:items-start"
+          >
+            <!-- icon -->
+
+            <img src="./images/Group 25.png" alt="" class="w-[72px] h-[72px]" />
+
+            <!-- content -->
+            <div>
+              <h3
+                class="font-[700] text-[30px] text-[#1F1F1F] leading-[100%] tracking-normal mb-5 mt-5"
+              >
+                Start Project
+              </h3>
+              <p
+                class="font-[500] text-1xl text-[#545454] leading-[165%] tracking-normal"
+              >
+                Embark on your design adventure by initiating your project.
+                Share your vision and set the stage for a bespoke design
+                experience
+              </p>
+            </div>
+          </div>
+          <!-- box -->
+          <div
+            class="flex flex-col lg:flex-row items-start lg:gap-10 items-center lg:items-start"
+          >
+            <!-- icon -->
+            <img src="./images/Group 26.png" alt="" />
+            <!-- content -->
+            <div>
+              <h3
+                class="font-[700] text-[30px] text-[#1F1F1F] leading-[100%] tracking-normal mb-5 mt-5"
+              >
+                Start Project
+              </h3>
+              <p
+                class="font-[500] text-1xl text-[#545454] leading-[165%] tracking-normal"
+              >
+                Embark on your design adventure by initiating your project.
+                Share your vision and set the stage for a bespoke design
+                experience
+              </p>
+            </div>
+          </div>
+          <!-- box -->
+          <div
+            class="flex flex-col lg:flex-row items-start lg:gap-10 items-center lg:items-start"
+          >
+            <!-- icon -->
+            <img src="./images/Group 27.png" alt="" />
+            <!-- content -->
+            <div>
+              <h3
+                class="font-[700] text-[30px] text-[#1F1F1F] leading-[100%] tracking-normal mb-5 mt-5"
+              >
+                Start Project
+              </h3>
+              <p
+                class="font-[500] text-1xl text-[#545454] leading-[165%] tracking-normal"
+              >
+                Embark on your design adventure by initiating your project.
+                Share your vision and set the stage for a bespoke design
+                experience
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="w-full max-w-[697.87890625px] lg:h-[851px] overflow-hidden">
+          <img
+            src="./images/79babf3017497c6191cb773fb741bd9893bb6527.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-[4px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container mt-[800px] lg:mt-[400px]">
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-20">
+        <!-- left side -->
+        <div class="w-[400px] lg:w-[711px] overflow-hidden">
+          <!-- image -->
+          <img src="./images/opinions.jpg" alt="" class="w-full object-cover" />
+
+          <!-- arrow -->
+          <div class="flex items-center gap-5 mt-10 hidden lg:flex">
+            <img src="./images/Left arrow.png" alt="" class="cursor-pointer" />
+            <img src="./images/Right arrow.png" alt="" class="cursor-pointer" />
+          </div>
+        </div>
+        <!-- right side -->
+        <div class="flex flex-col gap-20 lg:relative">
+          <!-- title -->
+          <h2
+            class="font-[600] text-[30px] lg:text-[58px] text-[#1F1F1F] leading-[100%]"
+          >
+            What Our Customers Say About Us
+          </h2>
+
+          <!-- carts -->
+          <div
+            class="flex flex-col lg:flex-row gap-10 lg:absolute lg:left-[-350px] lg:bottom-[-570px] lg:border-white lg:border-[30px] items-center"
+          >
+            <!-- cart-1 -->
+            <div class="bg-[#1F1F1F] p-10 rounded-[4px] w-[400px] lg:w-[500px]">
+              <h1 class="text-[#FFFFFF] font-[500] text-[100px]">“</h1>
+              <p
+                class="text-[#FFFFFF] font-[500] text-1xl leading-[165%] tracking-normal"
+              >
+                Working with your design team was an absolute pleasure. The
+                attention to detail and creativity exceeded my expectations.
+                Thank you for making my home beautiful!
+              </p>
+
+              <!-- person data -->
+              <div class="flex items-center gap-6 mt-10">
+                <!-- image -->
+                <img
+                  src="./images/testimonial-1.png"
+                  alt="User photo"
+                  class="w-16 h-16 md:w-20 md:h-20 lg:w-20 lg:h-20 rounded-full object-cover"
+                />
+                <!-- content -->
+                <div>
+                  <h3 class="text-[#FFFFFF] font-[600] text-[20px]">
+                    Sophie Carter
+                  </h3>
+                  <p class="text-[#929292] font-[500] text-[16]">
+                    New York, USA
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- cart-2 -->
+            <div class="bg-[#1F1F1F] p-10 rounded-[4px] w-[400px] lg:w-[500px]">
+              <h1 class="text-[#FFFFFF] font-[500] text-[100px]">“</h1>
+              <p
+                class="text-[#FFFFFF] font-[500] text-1xl leading-[165%] tracking-normal"
+              >
+                Working with your design team was an absolute pleasure. The
+                attention to detail and creativity exceeded my expectations.
+                Thank you for making my home beautiful!
+              </p>
+
+              <!-- person data -->
+              <div class="flex items-center gap-6 mt-10">
+                <!-- image -->
+                <img
+                  src="./images/testimonial-2.jpg"
+                  alt="User photo"
+                  class="w-16 h-16 md:w-20 md:h-20 lg:w-20 lg:h-20 rounded-full object-cover"
+                />
+                <!-- content -->
+                <div>
+                  <h3 class="text-[#FFFFFF] font-[600] text-[20px]">
+                    Sophie Carter
+                  </h3>
+                  <p class="text-[#929292] font-[500] text-[16]">
+                    New York, USA
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- conect -->
+    <section
+      class="container mt-[100px] lg:mt-[400px] mb-20 flex justify-center items-center"
+    >
+      <div class="w-[770px]">
+        <h2
+          class="text-[#1F1F1F] font-sans font-semibold text-[48px] leading-[100%] tracking-normal text-center"
+        >
+          Subscribe to Our Newsletter for Design Insights
+        </h2>
+        <p
+          class="text-[#545454] font-sans font-medium text-[20px] leading-[165%] tracking-normal text-center mt-10 mb-10"
+        >
+          Be the first to discover trends, inspirations, and special offers as
+          we bring the world of design directly to your inbox
+        </p>
+
+        <!-- input -->
+        <div
+          class="flex h-[104px] justify-center items-center shadow-2xl p-5 bg-white rounded-[4px]"
+        >
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="w-full h-[60px] px-6 rounded-[4px] focus:outline-none focus:ring-[#1F1F1F] focus:border-transparent w-full"
+          />
+          <button
+            class="bg-[#1F1F1F] w-[140px] h-[60px] text-white rounded-[4px] hover:bg-black transition w-[275px]"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="bg-[#1F1F1F] py-40 mt-[-130px]">
+      <div class="container flex flex-col lg:flex-row justify-between gap-20">
+        <!-- col-1 -->
+        <div>
+          <!-- logo -->
+          <img src="./images/Logo 2.png" alt="" class="" />
+
+          <p
+            class="text-[#D1D1D1] font-sans font-medium text-[20px] leading-[151%] tracking-normal mt-10 max-w-lg"
+          >
+            VivaDecor your premier destination for luxury and modern interior
+            design
+          </p>
+
+          <!-- social -->
+          <div class="flex items-center gap-6 mt-10">
+            <img src="./images/Facebook.png" alt="" class="cursor-pointer" />
+            <img src="./images/X.png" alt="" class="cursor-pointer" />
+            <img src="./images/Instagram.png" alt="" class="cursor-pointer" />
+            <img src="./images/Linkdin.png" alt="" class="cursor-pointer" />
+          </div>
+        </div>
+        <!-- col-2 -->
+         <div>
+          <h3 class="font-sans font-semibold text-[24px] leading-[100%] tracking-normal text-[#FFFFFF]" >Our Services</h3>
+          <ul class="mt-10 space-y-8">
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white ">Lighting Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Interior Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Outdoor Design</a></li>
+         </div>
+        <!-- col-3 -->
+         <div>
+          <h3 class="font-sans font-semibold text-[24px] leading-[100%] tracking-normal text-[#FFFFFF]" >Our Services</h3>
+          <ul class="mt-10 space-y-8">
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Lighting Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Interior Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Outdoor Design</a></li>
+         </div>
+        <!-- col-4 -->
+         <div>
+          <h3 class="font-sans font-semibold text-[24px] leading-[100%] tracking-normal text-[#FFFFFF]" >Our Services</h3>
+          <ul class="mt-10 space-y-8">
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Lighting Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Interior Design</a></li>
+            <li><a href="#" class="text-[#D1D1D1] hover:text-white">Outdoor Design</a></li>
+         </div>
+      </div>
+    </section>
+  </body>
+</html>
